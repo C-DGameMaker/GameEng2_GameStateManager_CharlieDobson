@@ -1449,7 +1449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -138.3, y: -44.2}
+  m_AnchoredPosition: {x: -138.30005, y: -44.19995}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903093026
@@ -2393,7 +2393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1612179708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2936,7 +2936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1927115835}
-  - component: {fileID: 1927115834}
+  - component: {fileID: 1927115836}
   m_Layer: 0
   m_Name: GameStateManager
   m_TagString: Untagged
@@ -2944,20 +2944,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1927115834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927115833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0497277513efe64a84f6b78d5c6bd0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
-  currentState: 0
-  previousState: 0
 --- !u!4 &1927115835
 Transform:
   m_ObjectHideFlags: 0
@@ -2973,6 +2959,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2038384506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1927115836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927115833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b82b73d27a89746a582bdc651ac213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
+  currentState: 0
+  previousState: 0
 --- !u!1 &1976849086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,7 +3272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcce0e3ce4df80d49bc4336311150d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ServiceHubManager
-  gameStateManager: {fileID: 1927115834}
+  gameStateManager: {fileID: 1927115836}
   uiManager: {fileID: 1169685809}
 --- !u!4 &2038384506
 Transform:
@@ -3333,6 +3333,7 @@ RectTransform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 349924163}
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
@@ -3341,4 +3342,3 @@ SceneRoots:
   - {fileID: 174754692}
   - {fileID: 1441128956}
   - {fileID: 2038384506}
-  - {fileID: 349924163}
