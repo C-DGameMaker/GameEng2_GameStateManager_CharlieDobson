@@ -5,6 +5,7 @@ public class ServiceHubManager : MonoBehaviour
     public static ServiceHubManager Instance { get; private set; }
 
     public GameStateManager gameStateManager;
+    public UIManager uiManager;
 
     private void Awake()
     {

@@ -35,8 +35,8 @@ public class UIManager : MonoBehaviour
         GameOverUI.SetActive(true);
     }
 
-    public void SetPausedUI()
+    public void ShowPausedUI()
     {
-        PausedUI.SetActive(!PausedUI.activeSelf);
+        PausedUI.SetActive(true);
     }
 }
