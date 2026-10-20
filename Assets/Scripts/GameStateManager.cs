@@ -37,9 +37,11 @@ public class GameStateManager : MonoBehaviour
                     break;
 
             case Gamestate.gameplay:
+                Time.timeScale = 1;
                 break;
 
             case Gamestate.paused:
+                Time.timeScale = 0;
                 break;
 
             case Gamestate.gameOver:
